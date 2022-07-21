@@ -1,0 +1,64 @@
+body{
+    background: url('cover2.JPG') no-repeat ;
+    background-size: cover;
+
+}
+
+ul{
+     list-style: none;
+     margin-left: 90px;
+     margin-top: 0px;
+     padding:0px;
+     
+     opacity:.7;
+}
+ul li{
+    background-color: black;
+    width:250px;
+    height: 40px;
+    float:left;
+    text-align: center;
+    margin:0px;
+    padding:10px;
+    line-height: 40px;
+    font-size:25px;  
+    color:white; 
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    display:block;
+}
+
+ul li a:hover{
+    background-color:red;
+}
+
+.search input[type="text"]
+{
+    text-align: center;
+    background-color:whitesmoke ;
+    opacity: .9;
+    outline: none;
+    height: 50px;
+    width:500px;
+    color:black;
+    font-size: 20px;
+   margin: 300;
+   margin-left: 500;
+   margin-right:0;
+}
+img{
+    width:100px;
+    height:100px;
+   margin-left: 70px ;
+    }
+.search input[type="submit"]{
+   color:black;
+   height:40px;
+   background-color: whitesmoke;
+   opacity:.9;
+   text-align: center;
+   outline:none; 
+}

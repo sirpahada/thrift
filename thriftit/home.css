@@ -1,0 +1,149 @@
+body{
+    background: grey;
+
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+
+}
+ul li {
+    float: left;
+    width:250px;
+    height:40px;
+    background-color:rgb(228, 245, 245);
+    opacity: .7;
+    margin-right:10px;
+    line-height:40px ;
+    color:black;
+    text-align: center;
+    font-size:30px ;
+    position:relative;
+}
+ul li a{
+    display: block ;
+    color:black;
+    text-decoration: none;
+    
+
+}
+ul li:hover{
+     background-color: rgb(141, 140, 138);
+}
+ul ul{
+    display: none;
+    list-style: none;
+}
+ul ul li{
+    list-style: none;
+}
+ul li:hover > ul{
+    list-style: none;
+    display: block;
+    color: grey;
+}
+ul ul ul{
+    margin-left: 252px;
+    top:0px;
+    position:absolute;
+    color: grey;
+}
+box{
+    margin: auto;
+    opacity:1;
+    float:right;
+    color: black;
+    font-size: 20px;
+    padding: 1px;
+}
+.search{
+    float:center;
+        color:black;
+        height:40px;
+     font-size: 20px;
+        text-align: center;    
+}
+.search input[type="text"]
+{
+    text-align: center;
+    background-color:whitesmoke ;
+    opacity: .9;
+    height: 30px;
+    width:400px;
+    color:black;
+    font-size: 20px;
+   border: 1px thin black;
+}
+.container{
+    width:1280px;
+    
+    margin:20 auto 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+
+.container .box{
+    position:relative; 
+    width:300px;
+    height:300px;
+    background:rgb(228, 245, 245);
+    margin:10px;
+    box-sizing: border-box;
+    display:inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    overflow:hidden;
+}
+
+.container .box .imgBox img{
+    max-width:100%;
+    height: 90%;
+    transition: transform 2s;
+    
+}
+
+.container .box:hover .imgBox img{
+    
+    transform:scale(1.2);
+}
+.container .box .details{
+    position: absolute;
+    top:150px;
+    left:80px;
+    right:10px;
+    bottom:30px;
+    background:whitesmoke;
+    opacity: .8;
+    transform: scaleY(0);
+    transition: transform.5s;
+
+}
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+.container.box .details .content{
+    position:absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    text-align: center;
+    padding:15px;
+    color:#fff;
+
+}
+
+.container .box .details .content h2{
+    margin:20px 0 0 20px;
+    padding:0;
+    font-size:20px;
+    color:red;
+}
+.container .box .details .content p{
+    margin:0px 0 0 20px;
+    padding:0;
+   
+}
